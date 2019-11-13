@@ -1,20 +1,15 @@
 import React from 'react';
+
+import ToDoItem from './components/ToDoItem';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <input type="checkbox"/>
-      <p>Something to do!</p>
-
-      <input type="checkbox"/>
-      <p>Something to do!</p>
-
-      <input type="checkbox"/>
-      <p>Something to do!</p>
-
-      <input type="checkbox"/>
-      <p>Something to do!</p>
+    <div className="todo-list">
+      <ToDoItem />
+      <ToDoItem />
+      <ToDoItem />
+      <ToDoItem />
     </div>
   )
 }
