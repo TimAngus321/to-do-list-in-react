@@ -3,6 +3,7 @@ import './App.css';
 
 import ToDoItem from './components/ToDoItem';
 import todosData from './todosData';
+import WellDone from './components/WellDone';
 
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
     })
   }
 
+
   render() {
   const todoItems = this.state.todos.map(item =>
     <ToDoItem key={item.id} item={item}
@@ -36,8 +38,11 @@ class App extends React.Component {
     )
 
     return (
+      <div>
+        <WellDone />
       <div className="todo-list">
         {todoItems}
+      </div>
       </div>
       )
     }
